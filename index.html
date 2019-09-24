@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>과제로 과제한다</title>
+	<style type="text/css">
+		div{margin:auto; position:relative;}
+		body{background: black ; margin: auto; height: 100vh;}
+
+		#mysquare{margin-left: 200px; margin-top: 500px; color: width: 100px; height: 100px; background: red;}
+		div #mysquare{width: 100px; height: 100px; background: red;}
+
+		
+		#box1{padding-top: 180px; }
+		#p1{margin-bottom: 30px; text-align: center; color: white;}
+		#buta:hover {opacity: 1;}}
+
+
+		#card{ width: 570px; margin: auto; float: left;  position: relative; }
+		.overlay {position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 580px; opacity: 0; transition: .02s ease;background-color: purple; border-radius: 12px;}
+		.overlay:hover {opacity: 0.7;}
+		
+		.text {font-size: 75px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); text-align: center; font-weight: bold; width: 490px; color: #03FFF8;}
+
+
+		#butb {
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			background-color: #f1f1f1;
+  			color: black;
+  			font-size: 16px;
+  			padding: 16px 30px;
+  			border: none;
+  			cursor: pointer;
+  			border-radius: 5px;
+  			text-align: center; border-width: 5px; border-style: outset; border-color: #bbb; opacity: 0;
+			}
+			#butb:hover {
+  			background-color: #03FFF8;
+			color: blue;}
+
+
+			#butc {
+  			position: absolute;
+  			top: 70%;
+  			left: 25%;
+  			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			background-color: #f1f1f1;
+  			color: black;
+  			font-size: 16px;
+  			padding: 16px 30px;
+  			border: none;
+  			cursor: pointer;
+  			border-radius: 5px;
+  			text-align: center; border-width: 5px; border-style: outset; border-color: #bbb; opacity: 0;
+			}
+			#butc:hover {
+  			background-color: #03FFF8;
+			color: blue;}
+
+
+			#butd {
+  			position: absolute;
+  			top: 20%;
+  			left: 80%;
+  			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			background-color: #f1f1f1;
+  			color: black;
+  			font-size: 16px;
+  			padding: 16px 30px;
+  			border: none;
+  			cursor: pointer;
+  			border-radius: 5px;
+  			text-align: center; border-width: 5px; border-style: outset; border-color: #bbb; opacity: 0;
+			}
+			#butd:hover {
+  			background-color: #03FFF8;
+			color: blue;}
+
+			#sorage{width: 400px; opacity: 0;
+			position: absolute;
+  			top: 50%;
+  			left: 70%;}
+
+  			#sorage2{width: 650px; opacity: 0;
+			position: absolute;
+  			top: 0%;
+  			left: 0%;}
+
+	</style>
+</head>
+<body>
+	<div id="box1">
+		<div id="p1"><strong>교수님, 전 틀렸어요 . . .</strong></div>
+ 
+
+		<div id="card">	
+			<img src="main.gif" alt="Avatar" id="buta" width="570" style="display: block; margin: auto; margin-bottom: 27px; border-radius: 12px; border-width: 5px; border-style: outset; border-color: #bbb;">
+			<div class="overlay">
+    			<div class="text"> 서희와 함께 과제 탈주ㄱㄱ </div>
+    		</div>
+    	</div>
+
+		<div id="p1">( &nbsp;절래&nbsp; )&nbsp; ( &nbsp;절래&nbsp; )</div>
+	</div>
+
+
+	
+  		<button id="butb">나</button>
+  		<button id="butc">잡아</button>
+  		<button id="butd">봐라 ~~~~~~</button>
+  		<img src="sorage1.png" id="sorage">
+  		<img src="sorage.gif" id="sorage2">
+	
+
+
+	<script type="text/javascript">
+		box1.onclick = function(){
+  			box1.style.opacity = "0";
+  			butb.style.opacity = "1";
+  			butc.style.opacity = "0";
+  			butd.style.opacity = "0";
+  			sorage.style.opacity = "0";
+  		}
+
+  		butb.onclick = function(){
+  			box1.style.opacity = "0";
+  			butb.style.opacity = "0";
+  			butc.style.opacity = "1";
+  			butd.style.opacity = "0";
+  			sorage.style.opacity = "0";
+  		}
+
+  		butc.onclick = function(){
+  			box1.style.opacity = "0";
+  			butb.style.opacity = "0";
+  			butc.style.opacity = "0";
+  			sorage.style.opacity = "0";
+  			butd.style.opacity = "1";
+  		}
+
+  		butd.onclick = function(){
+  			box1.style.opacity = "0";
+  			butb.style.opacity = "0";
+  			butc.style.opacity = "0";
+  			butd.style.opacity = "0";
+  			sorage.style.opacity = "1";
+  		}
+
+  		sorage.onclick = function(){
+  			box1.style.opacity = "0";
+  			butb.style.opacity = "0";
+  			butc.style.opacity = "0";
+  			butd.style.opacity = "0";
+  			sorage.style.opacity = "0";
+  			sorage2.style.opacity = "1";
+  		}
+
+
+		//butb.onclick = function(){
+			//var a = Math.floor( Math.random()*900 );
+			//var b = Math.floor( Math.random()*400 );
+			//console.log(a,b);
+			//butb.style.marginLeft = a + "px";
+			//butb.style.marginTop = b + "px";
+		//};
+
+
+	</script>
+
+</body>
+</html>
